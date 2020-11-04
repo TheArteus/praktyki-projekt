@@ -1,5 +1,10 @@
-public class main {
-    public static void main(String[] args) {
-        system.out.printf
+ class Main {
+            public static void main(String[] args){
+                int a = new Integer(5);
+                Auto auto = new Auto();
+                System.out.println(auto.a);
+
+
+                
     }
 }
