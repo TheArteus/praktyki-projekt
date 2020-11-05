@@ -24,7 +24,5 @@ public class Auto {
         this.opony = opony;
     }
 
-    int get.a(int a){
-        return a;
-    }
+
 }
