@@ -1,13 +1,13 @@
 package Cwiczenia;
 
 public class Czlowiek {
-    private double wzrost;
-    private char plec; // m = mezczyzna // k = kobieta // c = cos innego
-    private double stopa;
-    private boolean lysy;
-    private String color_wlosow;
-    private int wiek;
-    private Czlowiek[] rodzice;
+    protected double wzrost;
+    protected char plec; // m = mezczyzna // k = kobieta // c = cos innego
+    protected double stopa;
+    protected boolean lysy;
+    protected String color_wlosow;
+    protected int wiek;
+    protected Czlowiek[] rodzice;
 
     void setColor_wlosow(String color_wlosow){
       if(!lysy){
@@ -39,6 +39,20 @@ public class Czlowiek {
     }
 
     public void setRodzice(Czlowiek matka, Czlowiek ojciec) {
-        rodzice = new Czlowiek[]{matka, ojciec};
+        rodzice = new Czlowiek[]{matka, ojciec}
+    }
+
+    public Czlowiek(double wzrost, char plec, double stopa, boolean lysy, String color_wlosow, int wiek, Czlowiek[] rodzice) {
+        this.wzrost = wzrost;
+        this.plec = plec;
+        this.stopa = stopa;
+        this.lysy = lysy;
+        this.color_wlosow = color_wlosow;
+        this.wiek = wiek;
+        this.rodzice = rodzice;
+    }
+
+    public Czlowiek() {
     }
 }
+
