@@ -1,6 +1,6 @@
 package Cwiczenia;
 
-public class Czlowiek {
+public class Czlowiek implements Czlowiekinterface{
     protected double wzrost;
     protected char plec; // m = mezczyzna // k = kobieta // c = cos innego
     protected double stopa;
@@ -8,6 +8,39 @@ public class Czlowiek {
     protected String color_wlosow;
     protected int wiek;
     protected Czlowiek[] rodzice;
+
+    public void work(String where, int zaile){
+
+        System.out.println("Pracuje w" + where + "i zarabia" + zaile);
+
+    }
+
+    @Override
+    public void learn(String czego) {
+
+    }
+
+    @Override
+    public void run() {
+        
+    }
+
+    @Override
+    public Czlowiek give_birth() {
+        return null;
+    }
+
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public void choruje() {
+
+    }
+
+
 
     void setColor_wlosow(String color_wlosow){
       if(!lysy){
@@ -54,5 +87,9 @@ public class Czlowiek {
 
     public Czlowiek() {
     }
+
+
+
+
 }
 
