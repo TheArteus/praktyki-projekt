@@ -22,7 +22,7 @@ public class Czlowiek implements Czlowiekinterface{
 
     @Override
     public void run() {
-        
+
     }
 
     @Override
@@ -72,7 +72,7 @@ public class Czlowiek implements Czlowiekinterface{
     }
 
     public void setRodzice(Czlowiek matka, Czlowiek ojciec) {
-        rodzice = new Czlowiek[]{matka, ojciec}
+        rodzice = new Czlowiek[]{matka, ojciec};
     }
 
     public Czlowiek(double wzrost, char plec, double stopa, boolean lysy, String color_wlosow, int wiek, Czlowiek[] rodzice) {
