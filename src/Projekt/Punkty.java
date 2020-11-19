@@ -40,12 +40,35 @@ public class Punkty {
     }
 
     public Punkty(String nazwa, String opis, int nr_ending, int ilosc) {
-        Nazwa = nazwa;
-        Opis = opis;
+        this.Nazwa = nazwa;
+        this.Opis = opis;
         this.nr_ending = nr_ending;
         this.ilosc = ilosc;
     }
 
     public Punkty() {
     }
+
+    public void endinfo(String Nazwa, String Opis, int nr_ending)
+    {
+        this.Nazwa = Nazwa;
+        this.Opis = Opis;
+        this.nr_ending = nr_ending;
+        System.out.println((char) 27 + "[01;36m                     Zdobyłeś zakończenie - Ucieczka!" + (char) 27 + "[00;00m");
+        System.out.println((char) 27 + "[01;32m         " + Nazwa + (char) 27 + "[00;00m");
+        System.out.println((char) 27 + "[01;32m         " + Opis + (char) 27 + "[00;00m");
+        System.out.println((char) 27 + "[01;32m         Ending Numer: " + nr_ending + (char) 27 + "[00;00m");
+    }
+
+    public void deathinfo(String Nazwa, String Opis, int nr_ending)
+    {
+        this.Nazwa = Nazwa;
+        this.Opis = Opis;
+        this.nr_ending = nr_ending;
+        System.out.println((char) 27 + "[01;36m                     Zdobyłeś zakończenie - Uśmiercenie!" + (char) 27 + "[00;00m");
+        System.out.println((char) 27 + "[01;31m         " + Nazwa + (char) 27 + "[00;00m");
+        System.out.println((char) 27 + "[01;31m         " + Opis + (char) 27 + "[00;00m");
+        System.out.println((char) 27 + "[01;31m         Ending Numer: " + nr_ending + (char) 27 + "[00;00m");
+    }
+
 }
